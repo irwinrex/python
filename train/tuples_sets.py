@@ -52,3 +52,7 @@ print(fruit_sets)
 # Delete
 del fruit_sets
 # print(fruit_sets)
+
+# Variable is in ordered in sets
+test1 = {1,2,3,4}
+print(test1)
