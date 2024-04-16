@@ -54,4 +54,32 @@ if not (j == a):
     print(f"{j} is not equal to {a}")
 
 
-# Membership operators (not, not in) - Membership Operators are used to test if a sequence is presented in a object
+# Membership operators (in, not in) - Membership Operators are used to test if a sequence is presented in a object
+
+
+m=10
+o=2
+numbers=[1,2,3,4,5,6,7,8,9]
+
+# in
+if o in numbers:
+    print(f"{o} is in the list")
+
+# not in
+if m not in numbers:
+    print(f"{m} is not in the list")
+
+# Identity Operator (is, is not) - Compare the objects not if they are equal but if they are actually the same object
+# memory location
+
+e=1
+u=2
+r=1
+
+# is
+if e is r:
+    print(f'{e} is equal to {r}')
+
+# is not
+if e is not u:
+    print(f'{e} is not equal to {u}')
