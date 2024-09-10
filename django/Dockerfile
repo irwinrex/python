@@ -22,7 +22,7 @@ RUN rm -rvf /usr/local/lib/python3.11/site-packages/pip-23.0.1.dist-info
 RUN pip install --upgrade pip==24
 
 # Copy the requirements file into the container
-COPY django/requirements.txt .
+COPY dot/requirements.txt .
 
 # Install the requirements
 RUN pip install --no-cache-dir -r requirements.txt
@@ -42,7 +42,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Copy the rest of the application code into the container
-COPY /django /app
+COPY /dot /app
 
 # Copy Python libraries from the BASE Image
 COPY --from=builder /usr/local/lib/python3.11/ /usr/local/lib/python3.11/
